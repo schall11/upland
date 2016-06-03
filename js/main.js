@@ -2203,7 +2203,7 @@ define([
         console.log(featureData);
         var featureData_email = featureData.attributes;
         var geomXY = webMercatorUtils.xyToLngLat(this.addressGeometry.x, this.addressGeometry.y);
-        featureData_email['latlng'] = geomXY;
+        featureData_email[latlng] = geomXY;
         console.log(geomXY);
         console.log(featureData_email);
         //  end email debug
