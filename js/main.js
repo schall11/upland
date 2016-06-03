@@ -2201,9 +2201,11 @@ define([
 		  // begin email debug
           console.log("Successfully Added edits - Email would fire here");
         console.log(featureData);
+        var featureData_email = featureData.attributes;
         var geomXY = webMercatorUtils.xyToLngLat(this.addressGeometry.x, this.addressGeometry.y);
+        featureData_email['latlng'] = geomXY;
         console.log(geomXY);
-        console.log(featureData.attributes);
+        console.log(featureData_email);
         //  end email debug
         // Add attachment on success
         if (addResults[0].success && this.isHumanEntry) {
