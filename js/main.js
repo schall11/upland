@@ -2200,9 +2200,10 @@ define([
       this._formLayer.applyEdits([featureData], null, null, lang.hitch(this, function (addResults) {
 		  // begin email debug
           console.log("Successfully Added edits - Email would fire here");
-          console.log(this.addressGeometry.x);
-          console.log(this.addressGeometry.y);
-          console.log(featureData.attributes);
+        console.log(featureData);
+        console.log(this.addressGeometry.x);
+        console.log(this.addressGeometry.y);
+        console.log(featureData.attributes);
         //  end email debug
         // Add attachment on success
         if (addResults[0].success && this.isHumanEntry) {
