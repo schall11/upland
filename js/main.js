@@ -2202,7 +2202,7 @@ define([
           console.log("Successfully Added edits - Email would fire here");
           console.log(this.addressGeometry.x);
           console.log(this.addressGeometry.y);
-          console.log(featureData);
+          console.log(featureData.attributes);
         //  end email debug
         // Add attachment on success
         if (addResults[0].success && this.isHumanEntry) {
